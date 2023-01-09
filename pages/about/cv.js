@@ -1,10 +1,10 @@
 import Head from 'next/head'
-import Homepage from '../components/Homepage'
+import Cv from '../../components/about/Cv'
 
 
 
 
-export default function Home() {
+export default function CvPage() {
   return (
     <>
       <Head>
@@ -13,7 +13,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       
-      <Homepage />
+      <Cv />
     </>
   )
 }

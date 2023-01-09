@@ -1,10 +1,10 @@
 import Head from 'next/head'
-import Homepage from '../components/Homepage'
+import Contact from '../components/Contact'
 
 
 
 
-export default function Home() {
+export default function ContactPage() {
   return (
     <>
       <Head>
@@ -13,7 +13,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       
-      <Homepage />
+      <Contact />
     </>
   )
 }
