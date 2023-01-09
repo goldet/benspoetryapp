@@ -6,7 +6,7 @@ const DropdownMenu = ({ name, slugs }) => {
     string.charAt(0).toUpperCase() + string.slice(1);
 
   return (
-    <div>
+    <div className="border-2 absolute top-0 left-0">
       <ul>
         {slugs.map((slug) => (
           <li key={slug}>

@@ -45,7 +45,7 @@ const Navbar = () => {
           <Link href="/">Home</Link>
         </li>
 
-        <li>
+        <li className="relative">
           <button ref={work} onClick={() => handleClick("work")}>
             Work
           </button>
