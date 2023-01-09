@@ -1,36 +1,71 @@
-import Link from 'next/link'
+import Link from "next/link";
+import { useState, useEffect, useRef } from "react";
+import DropdownMenu from "./utility/DropdownMenu";
 
 const Navbar = () => {
-  return <div>
-    <h2>Ben Schroeder</h2>
+  const [dropdown, setDropdown] = useState(null);
+  const work = useRef();
+  const about = useRef();
 
-    <ul>
+  useEffect(() => {
+    function handleClickOutside(event) {
+      console.log(work.current, about.current, event.target);
+      if (
+        !work.current.contains(event.target) ||
+        !about.current.contains(event.target)
+      ) {
+        setDropdown(null);
+      }
+    }
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [work, about]);
+
+  const handleClick = (menu) => {
+    if (!dropdown) {
+      setDropdown(menu);
+    }
+    if (dropdown !== menu) {
+      setDropdown(menu);
+    }
+  };
+
+  return (
+    <div>
+      <h2>Ben Schroeder</h2>
+
+      <ul>
         <li>
-            <Link href="/">Home</Link>
+          <Link href="/">Home</Link>
         </li>
 
         <li>
-            <Link href="/work/poetry">Poetry</Link>
+          <button ref={work} onClick={() => handleClick("work")}>
+            Work
+          </button>
+          {dropdown === "work" && (
+            <DropdownMenu name="work" slugs={["poetry", "essays"]} />
+          )}
         </li>
 
         <li>
-            <Link href="/work/essays">Essays</Link>
+          <button ref={about} onClick={() => handleClick("about")}>
+            About
+          </button>
+          {dropdown === "about" && (
+            <DropdownMenu name="about" slugs={["bio", "cv"]} />
+          )}
         </li>
 
         <li>
-            <Link href="/about/bio">Bio</Link>
+          <Link href="/contact">Contact</Link>
         </li>
-
-        <li>
-            <Link href="/about/cv">CV</Link>
-        </li>
-        
-        <li>
-            <Link href="/contact">Contact</Link>
-        </li>
-
-    </ul>
-  </div>;
+      </ul>
+    </div>
+  );
 };
 
 export default Navbar;
