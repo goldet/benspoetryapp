@@ -1,6 +1,6 @@
 const Contact = () => {
   return (
-    
+    <div>
     <div className="flex flex-col items-center  lg:" > {/* //align items */}
       <h1 className="text-2xl underline mb-5 text-center">Contact me</h1>
 
@@ -18,6 +18,7 @@ const Contact = () => {
           <a className="hover:underline" href="https://www.linkedin.com/in/ben-schroeder-766bb6122/" target="_blank">Linkedin</a>
         </li>
       </ul>
+    </div>
     </div>
   );
 };
