@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { useState, useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import DropdownMenu from "./utility/DropdownMenu";
 
 const Navbar = () => {
@@ -11,9 +11,10 @@ const Navbar = () => {
     function handleClickOutside(event) {
       console.log(work.current, about.current, event.target);
       if (
-        !work.current.contains(event.target) ||
+        !work.current.contains(event.target) &&
         !about.current.contains(event.target)
       ) {
+        console.log('first')
         setDropdown(null);
       }
     }
@@ -24,12 +25,14 @@ const Navbar = () => {
     };
   }, [work, about]);
 
-  const handleClick = (menu) => {
+  const handleClick = (name) => {
+    console.log('second')
     if (!dropdown) {
-      setDropdown(menu);
-    }
-    if (dropdown !== menu) {
-      setDropdown(menu);
+      setDropdown(name);
+    } else if (dropdown !== name) {
+      setDropdown(name);
+    } else if (dropdown === name) {
+      setDropdown(null);
     }
   };
 
