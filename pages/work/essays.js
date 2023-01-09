@@ -1,10 +1,10 @@
 import Head from 'next/head'
-import Contact from '../components/Contact'
+import Essays from '../../components/work/Essays'
 
 
 
 
-export default function ContactPage() {
+export default function EssaysPage() {
   return (
     <>
       <Head>
@@ -13,7 +13,7 @@ export default function ContactPage() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       
-      <Contact />
+      <Essays />
     </>
   )
 }
