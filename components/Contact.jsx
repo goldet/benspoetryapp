@@ -1,8 +1,8 @@
 const Contact = () => {
   return (
     <div>
-    <div className="flex flex-col items-center  lg:" > {/* //align items */}
-      <h1 className="text-2xl underline mb-5 text-center">Contact me</h1>
+    <div className="flex flex-col items-center  lg:flex lg:flex-col lg:items-start " > {/* //align items */}
+      <h1 className="text-2xl underline mb-5 text-center lg:text-left">Contact me</h1>
 
       <ul className="">
         <li className="flex gap-1"> 
@@ -15,7 +15,7 @@ const Contact = () => {
         </li>
 
         <li>
-          <a className="hover:underline" href="https://www.linkedin.com/in/ben-schroeder-766bb6122/" target="_blank">Linkedin</a>
+          <a className="hover:underline" href="https://www.linkedin.com/in/ben-schroeder-766bb6122/" target="blank">Linkedin</a>
         </li>
       </ul>
     </div>
