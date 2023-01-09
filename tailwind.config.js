@@ -5,15 +5,7 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-  
-      listStyleType: {
-        
-        disc: 'disc',
-        /* decimal: 'decimal',
-        square: 'square',
-        roman: 'upper-roman',
-        extend: {}, */
+    extend: {},
   },
   plugins: [],
-}
 }
