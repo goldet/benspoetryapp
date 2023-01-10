@@ -2,7 +2,7 @@ const Contact = () => {
 
   return (
     <div>
-    <div className="flex flex-col items-center  lg:flex lg:flex-col lg:items-start " > {/* //align items */}
+    <div className="pt-20 flex flex-col items-center md:flex md:flex-col md:items-start lg:flex lg:flex-col lg:items-start " > {/* //align items */}
       <h1 className="text-2xl underline mb-5 text-center lg:text-left">Contact me</h1>
 
       <ul className="">
