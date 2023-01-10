@@ -24,8 +24,8 @@ const Navbar = () => {
 
   return (
     <div className="flex justify-between py-8 px-4">
-      <h2 className="font-bold">
-        Ben <br /> Schroeder
+      <h2 className="text-4xl italic">
+        Ben Schroeder
       </h2>
 
       <div ref={ref}>
@@ -41,7 +41,7 @@ const Navbar = () => {
           </>
         ) : (
           <button 
-            className="font-bold" 
+            className="" 
             onClick={() => setMainMenu(!mainMenu)}
           >
             Menu
