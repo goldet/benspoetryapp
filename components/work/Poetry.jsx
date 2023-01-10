@@ -14,15 +14,15 @@ const WorkPoetry = () => {
         </li>
 
         <li className="pt-2">
-          <a className="hover:underline" href="https://bluepepper.blogspot.com/2022/08/new-poetry-by-ben-schroeder.html?m=0" target="blank">Speech in <em>Bluepepper</em> 2022</a>
+          <a className="hover:underline" href="https://bluepepper.blogspot.com/2022/08/new-poetry-by-ben-schroeder.html?m=0" target="blank">"Speech" in <em>Bluepepper</em> 2022</a>
         </li>
 
         <li className="pt-2">
-          <a className="hover:underline" href="https://www.andchangepoetry.com" target="blank"> Because it was me in <em>& Change</em> (forthcoming 2023)</a>
+          <a className="hover:underline" href="https://www.andchangepoetry.com" target="blank"> "Because it was him, / Because it was me" in <em>& Change</em> (forthcoming 2023)</a>
         </li>
 
         <li className="pt-2">
-          <a className="hover:underline" href="https://www.andchangepoetry.com" target="blank"> [Sleepsmile, spark of rub against] <em>& Change</em> (forthcoming 2023)</a>
+          <a className="hover:underline" href="https://www.andchangepoetry.com" target="blank"> "[Sleepsmile, spark of rub against]" <em>& Change</em> (forthcoming 2023)</a>
         </li>
 
       </ul>
