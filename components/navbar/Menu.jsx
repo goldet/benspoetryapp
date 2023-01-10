@@ -25,7 +25,7 @@ const Menu = () => {
   // }, [about]);
 
   const handleClick = (name) => {
-    console.log("second");
+
     if (!dropdown) {
       setDropdown(name);
     } else if (dropdown !== name) {
@@ -47,16 +47,16 @@ const Menu = () => {
 
           <li /* ref={work} */ className={styles.reveal} style={{ "--i": "1" }}>
             <button onClick={() => handleClick("work")}>Work</button>
-            {dropdown === "work" && (
+            {/* {dropdown === "work" && (
               <DropdownMenu name="work" slugs={["poetry", "essays"]} />
-            )}
+            )} */}
           </li>
 
           <li /* ref={about} */ className={styles.reveal} style={{ "--i": "2" }}>
             <button onClick={() => handleClick("about")}>About</button>
-            {dropdown === "about" && (
+            {/* {dropdown === "about" && (
               <DropdownMenu name="about" slugs={["bio", "cv"]} />
-            )}
+            )} */}
           </li>
 
           <li className={styles.reveal} style={{ "--i": "3" }}>
