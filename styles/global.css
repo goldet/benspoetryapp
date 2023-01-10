@@ -8,14 +8,6 @@
 * {
 font-family: 'Crimson Text', serif; 
 
-
-
-
-
-
-
-
-
 /* for PRANKING */
 /* font-family: 'Gloria Hallelujah', cursive; */
 
@@ -23,6 +15,9 @@ font-family: 'Crimson Text', serif;
  background-color: #f8fafc;
 }
 
+.nameHeader {
+    font-family: 'Crimson Pro', serif;;
+}
 
 
 body {

@@ -23,8 +23,9 @@ const Navbar = () => {
   }, [ref, mainMenu]);
 
   return (
+    <>
     <div className="flex justify-between py-8 px-4">
-      <h2 className="text-4xl italic">
+      <h2 className="nameHeader text-4xl italic font-extralight">
         Ben Schroeder
       </h2>
 
@@ -49,6 +50,7 @@ const Navbar = () => {
         )}
       </div>
     </div>
+    </>
   );
 };
 
