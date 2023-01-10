@@ -37,10 +37,10 @@ const Navbar = () => {
   };
 
   return (
-    <div>
+    <div className="flex justify-between">
       <h2>Ben Schroeder</h2>
 
-      <ul>
+      <ul className="flex gap-2">
         <li>
           <Link href="/">Home</Link>
         </li>

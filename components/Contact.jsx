@@ -1,4 +1,5 @@
 const Contact = () => {
+
   return (
     <div>
     <div className="flex flex-col items-center  lg:flex lg:flex-col lg:items-start " > {/* //align items */}
@@ -24,3 +25,4 @@ const Contact = () => {
 };
 
 export default Contact;
+
