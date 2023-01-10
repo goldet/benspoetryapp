@@ -1,6 +1,6 @@
 const WorkEssays = () => {
     return <div>
-      <h2>I HATE CALL ME BY YOUR NAME!!!!! 😠</h2>
+      <h1 className="text-2xl">I HATE CALL ME BY YOUR NAME!!!!! 😠</h1>
     </div>;
   };
   
