@@ -8,7 +8,7 @@ const Navbar = () => {
 
   useEffect(() => {
     function handleClickOutside(event) {
-      console.log(ref.current, event.target);
+
       if (!ref.current.contains(event.target)) {
         setMainMenu(!mainMenu);
       }
