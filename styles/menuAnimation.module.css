@@ -1,0 +1,27 @@
+.reveal {
+  animation: reveal 1s ease-in both;
+  animation-delay: calc(var(--i) * .2s);
+}
+
+@keyframes reveal {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.hide {
+  animation: hide 2s ease-in-out both;
+}
+
+@keyframes hide {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
