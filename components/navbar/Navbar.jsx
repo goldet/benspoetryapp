@@ -9,9 +9,7 @@ const Navbar = () => {
   useEffect(() => {
     function handleClickOutside(event) {
       console.log(ref.current, event.target);
-      if (
-        !ref.current.contains(event.target)
-      ) {
+      if (!ref.current.contains(event.target)) {
         setMainMenu(!mainMenu);
       }
     }
@@ -23,30 +21,14 @@ const Navbar = () => {
   }, [ref, mainMenu]);
 
   return (
-    <div className="flex justify-between py-8 px-4">
-      <h2 className="font-bold">
-        Ben <br /> Schroeder
-      </h2>
+    <div className="flex justify-between py-8 px-8">
+      <h2 className="text-xl font-medium">Ben Schroeder</h2>
 
-      <div ref={ref}>
-        {mainMenu ? (
-          <>
-            <button
-              className="font-bold absolute top-0 right-2"
-              onClick={() => setMainMenu(!mainMenu)}
-            >
-              x
-            </button>
-            <Menu />
-          </>
-        ) : (
-          <button 
-            className="font-bold" 
-            onClick={() => setMainMenu(!mainMenu)}
-          >
-            Menu
-          </button>
-        )}
+      <div ref={ref} className="relative">
+        <button className={`${mainMenu && "border-b-2"} font-medium`} onClick={() => setMainMenu(!mainMenu)}>
+          Menu
+        </button>
+        {mainMenu && <Menu />}
       </div>
     </div>
   );

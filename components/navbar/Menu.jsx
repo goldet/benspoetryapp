@@ -38,7 +38,7 @@ const Menu = () => {
   // inline style define variable for each
   //  custom css calculates time for staggered animation
   return (
-    <ul className="absolute right-4 z-10 flex flex-col justify-evenly gap-2 pt-2 align-middle ">
+    <ul className="absolute z-10 flex flex-col justify-evenly gap-2 pt-2 align-middle ">
       {!dropdown && (
         <>
           <li className={styles.reveal} style={{ "--i": "0" }}>
