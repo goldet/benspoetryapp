@@ -13,8 +13,10 @@ const Navbar = () => {
 
   useEffect(() => {
     function handleClickOutside(event) {
+
       console.log(window.innerWidth)
       if (!ref.current?.contains(event.target)) {
+
         setMainMenu(!mainMenu);
         setDropdown(null);
       }
@@ -25,6 +27,7 @@ const Navbar = () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, [ref, mainMenu]);
+
 
   const handleMenuClick = () => {
     if (!mainMenu) {
@@ -66,6 +69,7 @@ const Navbar = () => {
         </div>
         } */}
       </div>
+
     </>
   );
 };
