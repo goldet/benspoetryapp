@@ -1,4 +1,5 @@
 import Link from "next/link";
+import styles from "../../styles/menuAnimation.module.css";
 
 const DropdownMenu = ({ name, slugs }) => {
 
@@ -6,17 +7,15 @@ const DropdownMenu = ({ name, slugs }) => {
     string.charAt(0).toUpperCase() + string.slice(1);
 
   return (
-    <div className="border-2 absolute bg-white w-full ">
-      <ul>
-        {slugs.map((slug) => (
-          <li key={slug}>
+    <>
+        {slugs.map((slug, i) => (
+          <li key={slug} className={styles.reveal} style={{ "--i": `${i}` }}>
             <Link href={`/${name}/${slug}`}>
               {capitalizeFirstLetter(slug)}
               </Link>
           </li>
         ))}
-      </ul>
-    </div>
+        </>
   );
 };
 
