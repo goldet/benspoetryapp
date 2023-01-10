@@ -25,7 +25,7 @@ const Menu = () => {
   // }, [about]);
 
   const handleClick = (name) => {
-    console.log("second");
+
     if (!dropdown) {
       setDropdown(name);
     } else if (dropdown !== name) {
@@ -38,7 +38,7 @@ const Menu = () => {
   // inline style define variable for each
   //  custom css calculates time for staggered animation
   return (
-    <ul className="absolute right-4 z-10 flex flex-col justify-evenly gap-2 pt-2 align-middle ">
+    <ul className="absolute z-10 flex flex-col justify-evenly gap-2 pt-2 align-middle ">
       {!dropdown && (
         <>
           <li className={styles.reveal} style={{ "--i": "0" }}>
@@ -47,16 +47,16 @@ const Menu = () => {
 
           <li /* ref={work} */ className={styles.reveal} style={{ "--i": "1" }}>
             <button onClick={() => handleClick("work")}>Work</button>
-            {dropdown === "work" && (
+            {/* {dropdown === "work" && (
               <DropdownMenu name="work" slugs={["poetry", "essays"]} />
-            )}
+            )} */}
           </li>
 
           <li /* ref={about} */ className={styles.reveal} style={{ "--i": "2" }}>
             <button onClick={() => handleClick("about")}>About</button>
-            {dropdown === "about" && (
+            {/* {dropdown === "about" && (
               <DropdownMenu name="about" slugs={["bio", "cv"]} />
-            )}
+            )} */}
           </li>
 
           <li className={styles.reveal} style={{ "--i": "3" }}>
