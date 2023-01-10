@@ -4,8 +4,8 @@ import benphoto2 from '../public/benphoto2.jpg'
 export default function Homepage() {
   return <>
 
-  <div className='lg:flex lg:flex-row justify-between p-40 pt-36'>
-  <div className='lg:flex lg:flex-col p-12'>
+  <div className='lg:flex lg:flex-row lg:justify-between lg:p-40 lg:pt-36'>
+  <div className='lg:flex lg:flex-col lg:p-12'>
   <h1 className="pt-20 text-2xl flex flex-col items-center">Ben Schroeder</h1>
   <h2 className="text-xl text-center text-slate-900">Poet</h2>
   
