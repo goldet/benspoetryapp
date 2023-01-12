@@ -1,0 +1,26 @@
+
+.section{
+  padding: 0 0 .5rem 0;
+  margin: 0 0 1rem 0;
+  font-size: larger;
+  border-bottom: 1px solid black;
+}
+
+.subsection {
+  display: flex;
+  gap: 1rem;
+}
+
+.subsection_name {
+  font-size: large;
+  min-width: 5rem;
+}
+
+.entries {
+  display: flex;
+  flex-direction: column;
+}
+
+.company {
+  font-style: italic;
+}
