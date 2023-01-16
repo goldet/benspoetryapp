@@ -4,23 +4,10 @@ const AboutCv = () => {
   // CONTACT doesn't make sense
   // NAME ??
   return (
-    <div>
-      {/* <h2>Benjamin James Schroeder</h2>
-      <div>
-        <div>Plaza Lucena 2</div>
-        <div>3º D</div>
-        <div>28011</div>
-        <div>Madrid, España</div>
-      </div>
-      <div>
-        <div>ben.schroeder100@gmail.com</div>
-        <div>+34 644 22 78 29</div>
-      </div> */}
-      <section className="px-10">
+    <div className={styles.cv}>
         <h3 className={styles.section}>Education</h3>
-        <div className={styles.subsection}>
           <h4 className={styles.subsection_name}>
-            University of Minnesota Twin Cities
+            University of Minnesota
           </h4>
           <div className={styles.entries}>
             <div className={styles.entry}>
@@ -32,8 +19,6 @@ const AboutCv = () => {
               </div>
             </div>
           </div>
-        </div>
-        <div className={styles.subsection}>
           <h4 className={styles.subsection_name}>Universidad de Alcalá</h4>
           <div className={styles.entries}>
             <div className={styles.entry}>
@@ -43,11 +28,7 @@ const AboutCv = () => {
               </div>
             </div>
           </div>
-        </div>
-      </section>
-      <section className="px-10">
         <h3 className={styles.section}>Work</h3>
-        <div className={styles.subsection}>
           <h4 className={styles.subsection_name}>Publishing</h4>
           <div className={styles.entries}>
             <div className={styles.entry}>
@@ -75,8 +56,6 @@ const AboutCv = () => {
               <div className={styles.position}>Copyeditor</div>
             </div>
           </div>
-        </div>
-        <div className={styles.subsection}>
           <h4 className={styles.subsection_name}>Research</h4>
           <div className={styles.entries}>
             <div className={styles.entry}>
@@ -94,8 +73,6 @@ const AboutCv = () => {
               </div>
             </div>
           </div>
-        </div>
-        <div className={styles.subsection}>
           <h4 className={styles.subsection_name}>Advising</h4>
           <div className={styles.entries}>
             <div className={styles.entry}>
@@ -114,8 +91,6 @@ const AboutCv = () => {
               </div>
             </div>
           </div>
-        </div>
-        <div className={styles.subsection}>
           <h4 className={styles.subsection_name}>Education</h4>
           <div className={styles.entries}>
             <div className={styles.entry}>
@@ -147,11 +122,7 @@ const AboutCv = () => {
               <div className={styles.position}>Auxiliar de Conversación</div>
             </div>
           </div>
-        </div>
-      </section>
-      <section className="px-10">
         <h3 className={styles.section}>Publications</h3>
-        <div className={styles.subsection}>
           <h4 className={styles.subsection_name}>Poetry</h4>
           <div className={styles.entries}>
             <div className={styles.entry}>
@@ -198,8 +169,6 @@ const AboutCv = () => {
               <div className={styles.position}>&quot;Mass.&quot;</div>
             </div>
           </div>
-        </div>
-        <div className={styles.subsection}>
           <h4 className={styles.subsection_name}>Critical</h4>
           <div className={styles.entries}>
             <div className={styles.entry}>
@@ -211,8 +180,6 @@ const AboutCv = () => {
               </div>
             </div>
           </div>
-        </div>
-        <div className={styles.subsection}>
           <h4 className={styles.subsection_name}>Article</h4>
           <div className={styles.entries}>
             <div className={styles.entry}>
@@ -224,8 +191,6 @@ const AboutCv = () => {
               </div>
             </div>
           </div>
-        </div>
-        <div className={styles.subsection}>
           <h4 className={styles.subsection_name}>Review</h4>
           <div className={styles.entries}>
             <div className={styles.entry}>
@@ -237,11 +202,7 @@ const AboutCv = () => {
               </div>
             </div>
           </div>
-        </div>
-      </section>
-      <section className="px-10">
         <h3 className={styles.section}>Selected Presentations</h3>
-        <div className={styles.subsection}>
           <h4 className={styles.subsection_name}>Panels</h4>
           <div className={styles.entries}>
             <div className={styles.entry}>
@@ -273,8 +234,6 @@ const AboutCv = () => {
               </div>
             </div>
           </div>
-        </div>
-        <div className={styles.subsection}>
           <h4 className={styles.subsection_name}>Performances</h4>
           <div className={styles.entries}>
             <div className={styles.entry}>
@@ -288,11 +247,7 @@ const AboutCv = () => {
               </div>
             </div>
           </div>
-        </div>
-      </section>
-      <section className="px-10">
         <h3 className={styles.section}>Other Academic</h3>
-        <div className={styles.subsection}>
           <h4 className={styles.subsection_name}>Scholarships</h4>
           <div className={styles.entries}>
             <div className={styles.entry}>
@@ -316,8 +271,6 @@ const AboutCv = () => {
               </div>
             </div>
           </div>
-        </div>
-        <div className={styles.subsection}>
           <h4 className={styles.subsection_name}>Educational</h4>
           <div className={styles.entries}>
             <div className={styles.entry}>
@@ -325,11 +278,7 @@ const AboutCv = () => {
               <div className={styles.position}>Dean&#39;s List</div>
             </div>
           </div>
-        </div>
-      </section>
-      <section className="px-10">
         <h3 className={styles.section}>Misc. Honors</h3>
-        <div className={styles.subsection}>
           <h4 className={styles.subsection_name}>Judging</h4>
           <div className={styles.entries}>
             <div className={styles.entry}>
@@ -337,8 +286,6 @@ const AboutCv = () => {
               <div className={styles.position}>ArtWords contest judge</div>
             </div>
           </div>
-        </div>
-        <div className={styles.subsection}>
           <h4 className={styles.subsection_name}>Grants</h4>
           <div className={styles.entries}>
             <div className={styles.entry}>
@@ -356,8 +303,6 @@ const AboutCv = () => {
               </div>
             </div>
           </div>
-        </div>
-        <div className={styles.subsection}>
           <h4 className={styles.subsection_name}>Awards</h4>
           <div className={styles.entries}>
             <div className={styles.entry}>
@@ -368,11 +313,7 @@ const AboutCv = () => {
               </div>
             </div>
           </div>
-        </div>
-      </section>
-      <section className="px-10">
         <h3 className={styles.section}>Languages</h3>
-        <div className={styles.subsection}>
           <h4 className={styles.subsection_name}>Spanish</h4>
           <div className={styles.entries}>
             <div className={styles.entry}>
@@ -381,8 +322,6 @@ const AboutCv = () => {
               </div>
             </div>
           </div>
-        </div>
-        <div className={styles.subsection}>
           <h4 className={styles.subsection_name}>Italian</h4>
           <div className={styles.entries}>
             <div className={styles.entry}>
@@ -391,8 +330,6 @@ const AboutCv = () => {
               </div>
             </div>
           </div>
-        </div>
-      </section>
     </div>
   );
 };
