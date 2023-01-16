@@ -1,8 +1,6 @@
 import styles from "../../styles/cv.module.css";
 
 const AboutCv = () => {
-  // CONTACT doesn't make sense
-  // NAME ??
   return (
     <div className={styles.cv}>
         <h3 className={styles.section}>Education</h3>
@@ -12,11 +10,11 @@ const AboutCv = () => {
           <div className={styles.entries}>
             <div className={styles.entry}>
               <div className={styles.date}>2015-2018</div>
-              <div className={styles.company}>GPA: 3.987/4.00</div>
               <div className={styles.position}>
                 BA summa cum laude in English literature, minor in creative
                 writing
               </div>
+              <div className={styles.company}>GPA: 3.987/4.00</div>
             </div>
           </div>
           <h4 className={styles.subsection_name}>Universidad de Alcalá</h4>
