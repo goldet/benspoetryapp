@@ -2,7 +2,6 @@
 .cv {
   display: grid;
   grid-template-columns: 2fr 3fr;
-  padding: 0 2rem;
   line-height: 1.2;
 }
 
@@ -15,7 +14,7 @@
   grid-column: 1 / 3;
   padding: 1rem 0 .8rem 0;
   margin: 0 0 1.2rem 0;
-  font-size: 1.35rem;
+  font-size: 1.5rem;
   border-bottom: 1px solid black;
 }
 
@@ -42,7 +41,13 @@
 }
 
 @media (min-width: 640px) {
-  /* .subsection_name {
-    min-width: 15rem;
-  } */
+  .section {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  .section {
+    font-size: 1.5rem;
+  }
 }

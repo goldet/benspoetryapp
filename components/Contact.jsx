@@ -1,19 +1,18 @@
 const Contact = () => {
   return (
     <div>
-      <div className="flex flex-col items-center pt-20 md:flex md:flex-col md:items-start lg:flex lg:flex-col lg:items-start ">
-        {/* //align items */}
-        <h1 className="mb-5 text-center text-2xl underline lg:pt-10 lg:text-left">
-          Contact me
+      <div className="flex flex-col pt-8 md:flex md:flex-col md:items-start md:px-[10vw] lg:px-0 lg:flex lg:flex-col lg:items-start">
+        <h1 className="mb-5 text-6xl decoration-4 lg:pt-10 lg:text-left">
+          Contact
         </h1>
-        <ul>
+        <ul className="text-lg pt-[2vh]">
           <li className="flex gap-1">
             <a
               className="hover:underline"
               href="https://mail.google.com/mail/?view=cm&fs=1&to=ben.schroeder100@gmail.com&su=SUBJECT&body=BODY"
               target="blank"
             >
-              Email:{" "}
+              Email:
             </a>
             <h3>ben.schroeder100@gmail.com</h3>
           </li>

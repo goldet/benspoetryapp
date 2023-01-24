@@ -4,16 +4,15 @@ import thewake from "../../public/thewake.jpg";
 const WorkEssays = () => {
   return (
     <div>
-      <div className="flex flex-col pt-20 md:flex md:flex-col md:items-start lg:flex lg:flex-col lg:items-start">
-        {/* <h1 className="text-2xl underline mb-5 text-left lg:text-left lg:pt-10">Essays</h1> */}
-        <h1 className="px-5 pb-5 text-left text-2xl lg:pt-10 lg:text-left">
+      <div className="flex flex-col pt-8 md:flex md:flex-col md:items-start lg:flex lg:flex-col lg:items-start">
+        <h1 className="px-5 pb-5 text-left text-2xl lg:pt-10 lg:text-left lg:text-3xl">
           A Theater of the Impossible: The Problem with{" "}
           <em>Call Me by Your Name</em>
         </h1>
 
         <div className="w-40 pl-5 lg:flex lg:flex-row">
           <Image
-            className=""
+
             src={thewake}
             alt="logo of The Wake, the magazine that originally published this essay"
           ></Image>
@@ -127,7 +126,7 @@ const WorkEssays = () => {
           societal pressures play a strong role, as in our lives, they do not
           determine the possibility of queer relationships. Queer desire should
           be put carefully and lovingly on display, probed and interrogated
-          until it gives us something beautiful and new.{" "}
+          until it gives us something beautiful and new.
           <em>In Call Me by Your</em>
           Name, desire again tried to show us what it could teach, but its
           message got lost in the comfortable rhythm of telling an old story the
@@ -137,13 +136,13 @@ const WorkEssays = () => {
         <p className="pl-5 pr-10 pb-2 text-center">Works Cited</p>
         <p className="pl-5 pr-10 pb-5 text-xs">
           Dry, Jude. “Luca Guadagnino Had a Good Reason for Not Showing the Sex
-          Scene in ‘Call Me by Your Name.’” <em>Indiewire</em>, 22 Dec. 2017,{" "}
+          Scene in ‘Call Me by Your Name.’” <em>Indiewire</em>, 22 Dec. 2017,
           <u>https://owl.english.purdue.edu/owl/resource/747/08/</u>. Accessed
           22 Jan. 2018.
         </p>
 
-        <h1 className="px-5 pt-10 pb-1 text-left text-2xl lg:pt-10 lg:text-left">
-          The Variable of Absence: Caitlin Bailey’s <em>Solve</em> for Desire{" "}
+        <h1 className="px-5 pt-20 pb-1 text-left text-2xl lg:pt-20 lg:text-left lg:text-3xl">
+          The Variable of Absence: Caitlin Bailey’s <em>Solve</em> for Desire
         </h1>
 
         <h4 className="py-5 pl-5 pr-16 text-sm">
@@ -152,7 +151,7 @@ const WorkEssays = () => {
         </h4>
 
         <p className="pl-5 pr-10 pb-5">
-          In the very first poem of her debut collection{" "}
+          In the very first poem of her debut collection
           <em>Solve for Desire</em>, Caitlin Bailey begins to carve out the
           “hollow” where “only the sweetest grass” grows. “Whoever Drinks from
           Me” immediately presents “Brother as thirst,” a connection suggesting

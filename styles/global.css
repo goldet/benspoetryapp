@@ -18,10 +18,23 @@
 }
 
 body {
-  margin: 10px auto;
+  margin: 0 auto;
   max-width: 1000px;
+}
+
+main {
+  margin: 0 2rem;
 }
 
 li {
   list-style: none;
 }
+
+.grey-text {
+  color: rgba(0, 0, 0, 0.731)
+}
+
+.title-line-height {
+  line-height: .79;
+}
+

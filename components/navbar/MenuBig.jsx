@@ -4,12 +4,12 @@ import DropdownMenu from "../utility/DropdownMenu";
 const MenuBig = ({ dropdown, setDropdown, isWide, reference }) => {
   return (
     <>
-      <div className="flex gap-6 items-center" ref={reference}>
-        <li className="h-6 pt-1 hover:underline pr-1">
+      <div className="flex gap-6 items-center md:text-lg" ref={reference}>
+        <li className="h-6  hover:underline pr-1">
           <Link href="/">Home</Link>
         </li>
 
-        <div className="h-6 pt-1">
+        <div className="h-6 ">
           <button className="hover:underline pr-1" onClick={() => setDropdown("work")}>Work</button>
           {dropdown === "work" && (
             <DropdownMenu
@@ -21,7 +21,7 @@ const MenuBig = ({ dropdown, setDropdown, isWide, reference }) => {
           )}
         </div>
 
-        <div className="h-6 pt-1">
+        <div className="h-6 ">
           <button className="hover:underline pr-1" onClick={() => setDropdown("about")}>About </button>
           {dropdown === "about" && (
             <DropdownMenu
@@ -33,8 +33,8 @@ const MenuBig = ({ dropdown, setDropdown, isWide, reference }) => {
           )}
         </div>
 
-        <li className="h-6 pt-1 hover:underline pr-1">
-          <Link href="/contact"> Contact</Link>
+        <li className="h-6  hover:underline pr-1">
+          <Link href="/contact">Contact</Link>
         </li>
       </div>
     </>
