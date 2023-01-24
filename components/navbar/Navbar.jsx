@@ -1,8 +1,10 @@
 import Link from "next/link";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, useMediaQuery } from "react";
 import Menu from "./Menu";
 import { CgArrowLongLeft } from "react-icons/cg";
 import Sections from "./Sections";
+import {useMedia} from 'react-use';
+import MenuBig from "./MenuBig";
 
 
 // WINDOW IS NOT DEFINED ?!?!
@@ -10,9 +12,12 @@ const Navbar = () => {
   const [mainMenu, setMainMenu] = useState(false);
   const [dropdown, setDropdown] = useState(null);
   const ref = useRef();
+  const isWide = useMedia('(min-width: 480px)', 1);
+  
 
   useEffect(() => {
     function handleClickOutside(event) {
+      
 
       console.log(window.innerWidth)
       if (!ref.current?.contains(event.target)) {
@@ -47,6 +52,15 @@ const Navbar = () => {
         </h2>
 
         {/* {window.innerWidth <= 640 ? */}
+
+        {isWide ? ( <div ref={ref}>
+           <MenuBig dropdown={dropdown} 
+           setDropdown={setDropdown} /></div>
+        
+
+
+
+        ) : (
         <div ref={ref} className="relative">
           <div
             className={`${
@@ -62,7 +76,7 @@ const Navbar = () => {
             </button>
           </div>
           {mainMenu && <Menu dropdown={dropdown} setDropdown={setDropdown} />}
-        </div>
+        </div>  )}
         {/* :
         <div>
           <Sections />
