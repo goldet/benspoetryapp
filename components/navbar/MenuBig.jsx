@@ -1,21 +1,43 @@
+import Link from "next/link";
 import DropdownMenu from "../utility/DropdownMenu";
-import SectionsBig from "./SectionsBig";
 
-const MenuBig = ({ dropdown, setDropdown }) => {
-  // inline style define variable for each
-  //  custom css calculates time for staggered animation
+const MenuBig = ({ dropdown, setDropdown, isWide, reference }) => {
   return (
-    <div>
-       {!dropdown && (
-      <SectionsBig setDropdown={setDropdown}/> )}
-      {dropdown === "work" && (
-        <DropdownMenu name="work" slugs={["poetry", "essays"]} />
-      )}
-      {dropdown === "about" && (
-        <DropdownMenu name="about" slugs={["bio", "cv"]} />
-      )}
-    </div>
+    <>
+      <div className="flex gap-6 items-center" ref={reference}>
+        <li className="h-6 pt-1 hover:underline pr-1">
+          <Link href="/">Home</Link>
+        </li>
 
+        <div className="h-6 pt-1">
+          <button className="hover:underline pr-1" onClick={() => setDropdown("work")}>Work</button>
+          {dropdown === "work" && (
+            <DropdownMenu
+              name="work"
+              slugs={["poetry", "essays"]}
+              isWide={isWide}
+              setDropdown={setDropdown}
+            />
+          )}
+        </div>
+
+        <div className="h-6 pt-1">
+          <button className="hover:underline pr-1" onClick={() => setDropdown("about")}>About </button>
+          {dropdown === "about" && (
+            <DropdownMenu
+              name="about"
+              slugs={["bio", "cv"]}
+              isWide={isWide}
+              setDropdown={setDropdown}
+            />
+          )}
+        </div>
+
+        <li className="h-6 pt-1 hover:underline pr-1">
+          <Link href="/contact"> Contact</Link>
+        </li>
+      </div>
+    </>
   );
 };
 

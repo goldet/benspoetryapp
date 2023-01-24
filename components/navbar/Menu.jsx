@@ -1,20 +1,19 @@
 import DropdownMenu from "../utility/DropdownMenu";
 import Sections from "./Sections";
 
-const Menu = ({ dropdown, setDropdown }) => {
+const Menu = ({ dropdown, setDropdown, setMainMenu }) => {
 
-  // inline style define variable for each
-  //  custom css calculates time for staggered animation
+
   return (
     <ul className="absolute z-10 flex flex-col justify-evenly gap-2 pt-2 align-middle ">
       {!dropdown && (
-        <Sections setDropdown={setDropdown} />
+        <Sections setDropdown={setDropdown} setMainMenu={setMainMenu} />
       )}
       {dropdown === "work" && (
-        <DropdownMenu name="work" slugs={["poetry", "essays"]} />
+        <DropdownMenu name="work" slugs={["poetry", "essays"]} setMainMenu={setMainMenu} />
       )}
       {dropdown === "about" && (
-        <DropdownMenu name="about" slugs={["bio", "cv"]} />
+        <DropdownMenu name="about" slugs={["bio", "cv"]} setMainMenu={setMainMenu} />
       )}
     </ul>
   );
