@@ -17,7 +17,7 @@ const Navbar = () => {
       console.log(window.innerWidth)
       if (!ref.current?.contains(event.target)) {
 
-        setMainMenu(!mainMenu);
+        setMainMenu(false);
         setDropdown(null);
       }
     }

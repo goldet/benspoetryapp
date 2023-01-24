@@ -1,6 +1,6 @@
 .reveal {
-  animation: reveal 1s ease-in both;
-  animation-delay: calc(var(--i) * 0.2s);
+  animation: reveal .5s ease-in both;
+  animation-delay: calc(var(--i) * 0.1s);
 }
 
 @keyframes reveal {
