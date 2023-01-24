@@ -42,9 +42,9 @@ const Navbar = () => {
         </h2>
 
         {isWide ? (
-          <div ref={ref}>
-            <MenuBig dropdown={dropdown} setDropdown={setDropdown} />
-          </div>
+          // <div ref={ref} >
+            <MenuBig reference={ref}  dropdown={dropdown} setDropdown={setDropdown} isWide={isWide} />
+          // </div>
 
         ) : (
           <div ref={ref} className="relative">
