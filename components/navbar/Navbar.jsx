@@ -1,27 +1,18 @@
-import Link from "next/link";
-import { useEffect, useRef, useState, useMediaQuery } from "react";
-import Menu from "./Menu";
+import { useEffect, useRef, useState } from "react";
 import { CgArrowLongLeft } from "react-icons/cg";
-import Sections from "./Sections";
-import {useMedia} from 'react-use';
+import { useMedia } from "react-use";
+import Menu from "./Menu";
 import MenuBig from "./MenuBig";
 
-
-// WINDOW IS NOT DEFINED ?!?!
 const Navbar = () => {
   const [mainMenu, setMainMenu] = useState(false);
   const [dropdown, setDropdown] = useState(null);
   const ref = useRef();
-  const isWide = useMedia('(min-width: 480px)', 1);
-  
+  const isWide = useMedia("(min-width: 480px)", 1);
 
   useEffect(() => {
     function handleClickOutside(event) {
-      
-
-      console.log(window.innerWidth)
       if (!ref.current?.contains(event.target)) {
-
         setMainMenu(false);
         setDropdown(null);
       }
@@ -32,7 +23,6 @@ const Navbar = () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, [ref, mainMenu]);
-
 
   const handleMenuClick = () => {
     if (!mainMenu) {
@@ -51,39 +41,32 @@ const Navbar = () => {
           Ben Schroeder
         </h2>
 
-        {/* {window.innerWidth <= 640 ? */}
-
-        {isWide ? ( <div ref={ref}>
-           <MenuBig dropdown={dropdown} 
-           setDropdown={setDropdown} /></div>
-        
-
-
+        {isWide ? (
+          <div ref={ref}>
+            <MenuBig dropdown={dropdown} setDropdown={setDropdown} />
+          </div>
 
         ) : (
-        <div ref={ref} className="relative">
-          <div
-            className={`${
-              mainMenu && "border-b-2"
-            } box-content flex h-full align-middle`}
-          >
-            <button className="w-12 font-medium" onClick={handleMenuClick}>
-              {!dropdown ? (
-                "Menu"
-              ) : (
-                <CgArrowLongLeft className="mx-auto text-gray-500" />
-              )}
-            </button>
-          </div>
-          {mainMenu && <Menu dropdown={dropdown} setDropdown={setDropdown} />}
-        </div>  )}
-        {/* :
-        <div>
-          <Sections />
-        </div>
-        } */}
-      </div>
+          <div ref={ref} className="relative">
+            <div
+              className={`${
+                mainMenu && "border-b-2"
+              } box-content flex h-full align-middle`}
+            >
+              <button className="w-12 font-medium" onClick={handleMenuClick}>
 
+                {!dropdown ? (
+                  "Menu"
+                ) : (
+                  <CgArrowLongLeft className="mx-auto text-gray-500" />
+                )}
+              </button>
+            </div>
+
+            {mainMenu && <Menu dropdown={dropdown} setDropdown={setDropdown} setMainMenu={setMainMenu} />}
+          </div>
+        )}
+      </div>
     </>
   );
 };

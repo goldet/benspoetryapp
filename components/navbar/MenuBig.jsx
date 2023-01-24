@@ -2,12 +2,10 @@ import DropdownMenu from "../utility/DropdownMenu";
 import SectionsBig from "./SectionsBig";
 
 const MenuBig = ({ dropdown, setDropdown }) => {
-  // inline style define variable for each
-  //  custom css calculates time for staggered animation
+
   return (
     <div>
-       {!dropdown && (
-      <SectionsBig setDropdown={setDropdown}/> )}
+      {!dropdown && <SectionsBig setDropdown={setDropdown} />}
       {dropdown === "work" && (
         <DropdownMenu name="work" slugs={["poetry", "essays"]} />
       )}
@@ -15,7 +13,6 @@ const MenuBig = ({ dropdown, setDropdown }) => {
         <DropdownMenu name="about" slugs={["bio", "cv"]} />
       )}
     </div>
-
   );
 };
 
