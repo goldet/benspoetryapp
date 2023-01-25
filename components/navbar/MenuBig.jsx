@@ -1,7 +1,7 @@
 import Link from "next/link";
 import DropdownMenu from "../utility/DropdownMenu";
 
-const MenuBig = ({ dropdown, setDropdown, isWide, reference }) => {
+const MenuBig = ({ dropdown, setDropdown, isWide, reference, needed }) => {
   return (
     <>
       <div className="flex gap-6 items-center md:text-lg" ref={reference}>
