@@ -11,7 +11,7 @@ export default function Homepage() {
               Ben <br /> Schroeder
             </h1>
             <h2 className="pt-4 text-5xl text-[#000000ba] md:pt-8">
-              Little Poet
+             Poet
             </h2>
           </div>
           <div className="absolute bottom-20 flex self-end justify-self-center">
@@ -20,7 +20,7 @@ export default function Homepage() {
           </div>
         </div>
 
-        <div className="grid justify-center pt-8 pb-20 lg:h-[65vh]">
+        <div className="grid justify-center text-justify pt-8 pb-20 lg:h-[65vh] ">
           <Image
             className="mx-auto rounded-md"
             src={benphoto2}
@@ -28,7 +28,7 @@ export default function Homepage() {
             width="300"
             height="300"
           />
-          <p>
+          <p className=" text-lg pt-7">
             Ben Schroeder is a poet from Belgium—not the country but the small
             town in Wisconsin. He currently lives in Madrid, Spain, where he
             works as an English teacher. His work frequently examines instances
