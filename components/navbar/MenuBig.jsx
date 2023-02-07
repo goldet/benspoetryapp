@@ -21,7 +21,11 @@ const MenuBig = ({ dropdown, setDropdown, isWide, reference, needed }) => {
           )}
         </div>
 
-        <div className="h-6 ">
+        <li className="h-6  hover:underline pr-1">
+          <Link href="/about/cv">CV</Link>
+        </li>
+
+      {/*   <div className="h-6 ">
           <button className="hover:underline pr-1" onClick={() => setDropdown("about")}>About </button>
           {dropdown === "about" && (
             <DropdownMenu
@@ -31,7 +35,7 @@ const MenuBig = ({ dropdown, setDropdown, isWide, reference, needed }) => {
               setDropdown={setDropdown}
             />
           )}
-        </div>
+        </div> */}
 
         <li className="h-6  hover:underline pr-1">
           <Link href="/contact">Contact</Link>

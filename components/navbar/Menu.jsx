@@ -12,9 +12,9 @@ const Menu = ({ dropdown, setDropdown, setMainMenu }) => {
       {dropdown === "work" && (
         <DropdownMenu name="work" slugs={["poetry", "essays"]} setMainMenu={setMainMenu} />
       )}
-      {dropdown === "about" && (
+     {/*  {dropdown === "about" && (
         <DropdownMenu name="about" slugs={["bio", "cv"]} setMainMenu={setMainMenu} />
-      )}
+      )} */}
     </ul>
   );
 };
