@@ -18,6 +18,9 @@ body {
   max-width: 1000px;
 }
 
+
+
+
 main {
   margin: 0 2rem;
 }
@@ -41,4 +44,5 @@ li {
 .title-line-height {
   line-height: .6;
 }
+
 

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import benseated from "../public/benseated.jpg";
 
+
 export default function Homepage() {
   return (
     <>
@@ -28,7 +29,7 @@ export default function Homepage() {
             width="400"
             height="400"
           />
-          <p className="text-lg pt-7 pb-4">
+          <p className="text-lg pt-7 pb-16">
             Ben Schroeder is a poet from Belgium—not the country but the small
             town in Wisconsin. He currently lives in Madrid, Spain, where he
             works as an English teacher. His work frequently examines instances
@@ -37,6 +38,8 @@ export default function Homepage() {
           </p>
         </div>
       </div>
+
+     
     </>
   );
 }
