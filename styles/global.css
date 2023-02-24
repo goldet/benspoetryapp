@@ -13,10 +13,6 @@
   background-color: #f8fafc;
 }
 
-.nameHeader {
-  font-family: "Crimson Pro", serif;
-}
-
 body {
   margin: 0 auto;
   max-width: 1000px;
@@ -30,11 +26,19 @@ li {
   list-style: none;
 }
 
+.hero {
+  height: calc(100vh - 11rem);
+}
+
+.nameHeader {
+  font-family: "Crimson Pro", serif;
+}
+
 .grey-text {
-  color: rgba(0, 0, 0, 0.731)
+  color: #000000ba
 }
 
 .title-line-height {
-  line-height: .79;
+  line-height: .6;
 }
 

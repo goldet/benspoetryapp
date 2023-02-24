@@ -17,7 +17,6 @@ const Navbar = () => {
         setDropdown(null);
       }
     }
-
     document.addEventListener("mousedown", handleClickOutside);
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
@@ -36,16 +35,19 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="flex justify-between py-8 px-8 h-28 align-middle lg:text-lg">
+      <div className="flex h-28 justify-between py-8 px-8 align-middle lg:text-lg">
         <h2 className="nameHeader text-4xl font-extralight italic">
           {/* Ben Schroeder */}
         </h2>
 
         {isWide ? (
-          // <div ref={ref} >
-            <MenuBig reference={ref}  dropdown={dropdown} setDropdown={setDropdown} isWide={isWide} />
-          // </div>
-
+          <MenuBig
+            reference={ref}
+            dropdown={dropdown}
+            setDropdown={setDropdown}
+            isWide={isWide}
+            needed={true}
+          />
         ) : (
           <div ref={ref} className="relative">
             <div
@@ -54,7 +56,6 @@ const Navbar = () => {
               } box-content flex h-full align-middle`}
             >
               <button className="w-12 font-medium" onClick={handleMenuClick}>
-
                 {!dropdown ? (
                   "Menu"
                 ) : (
@@ -62,8 +63,13 @@ const Navbar = () => {
                 )}
               </button>
             </div>
-
-            {mainMenu && <Menu dropdown={dropdown} setDropdown={setDropdown} setMainMenu={setMainMenu} />}
+            {mainMenu && (
+              <Menu
+                dropdown={dropdown}
+                setDropdown={setDropdown}
+                setMainMenu={setMainMenu}
+              />
+            )}
           </div>
         )}
       </div>
