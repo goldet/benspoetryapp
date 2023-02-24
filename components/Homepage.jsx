@@ -33,7 +33,7 @@ export default function Homepage() {
             town in Wisconsin. He currently lives in Madrid, Spain, where he
             works as an English teacher. His work frequently examines instances
             of reflection, refraction, and relation, often with a focus on the
-            everyday
+            everyday.
           </p>
         </div>
       </div>
