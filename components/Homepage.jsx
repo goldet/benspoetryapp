@@ -1,5 +1,5 @@
 import Image from "next/image";
-import benphoto2 from "../public/benphoto2.jpg";
+import benseated from "../public/benseated.jpg";
 
 export default function Homepage() {
   return (
@@ -22,13 +22,13 @@ export default function Homepage() {
 
         <div className="grid justify-center text-justify pt-8 pb-20 lg:h-[65vh] ">
           <Image
-            className="mx-auto rounded-md"
-            src={benphoto2}
+            className="mx-auto rounded-md "
+            src={benseated}
             alt="image of Ben Schroeder"
-            width="300"
-            height="300"
+            width="400"
+            height="400"
           />
-          <p className=" text-lg pt-7">
+          <p className="text-lg pt-7 pb-4">
             Ben Schroeder is a poet from Belgium—not the country but the small
             town in Wisconsin. He currently lives in Madrid, Spain, where he
             works as an English teacher. His work frequently examines instances
