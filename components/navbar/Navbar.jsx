@@ -10,18 +10,7 @@ const Navbar = () => {
   const ref = useRef();
   const isWide = useMedia("(min-width: 480px)", 1);
 
-  function IsWide() {
-    const isWide= useMedia({ minWidth: 480 });
-    return <Navbar isWide={isWide} />;
-  }
-  
-  IsWide.getInitialProps = async () => {
-    const isWideComponent = <IsWide />;
-    const initialProps = await Navbar.getInitialProps({
-      Component: isWideComponent,
-    });
-    return initialProps;
-  };
+
 
   useEffect(() => {
     function handleClickOutside(event) {

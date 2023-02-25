@@ -4,20 +4,8 @@ import { useMedia } from "react-use";
 
 
 export default function Homepage() {
-  const isWide = useMedia("(min-width: 480px)");
+  const isWide = useMedia("(min-width: 480px)", false);
 
-    function IsWide() {
-      const isWide= useMedia({ minWidth: 480 });
-      return <Homepage isWide={isWide} />;
-    }
-    
-    IsWide.getInitialProps = async () => {
-      const isWideComponent = <IsWide />;
-      const initialProps = await Homepage.getInitialProps({
-        Component: isWideComponent,
-      });
-      return initialProps;
-    };
 
   return (
     <>
