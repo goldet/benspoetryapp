@@ -328,7 +328,9 @@ const AboutCv = () => {
               </div>
             </div>
           </div>
+          <div className="pb-16"></div>
     </div>
+    
   );
 };
 

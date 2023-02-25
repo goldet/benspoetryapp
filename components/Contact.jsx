@@ -1,7 +1,7 @@
 const Contact = () => {
   return (
     <div>
-      <div className="flex flex-col pt-8 md:flex md:flex-col md:items-start md:px-[10vw] lg:px-0 lg:flex lg:flex-col lg:items-start">
+      <div className="h-screen flex flex-col pt-8 md:flex md:flex-col md:items-start md:px-[10vw] lg:px-0 lg:flex lg:flex-col lg:items-start">
         <h1 className="mb-5 text-6xl decoration-4 lg:pt-10 lg:text-left">
           Contact
         </h1>
