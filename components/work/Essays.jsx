@@ -4,7 +4,7 @@ import thewake from "../../public/thewake.jpg";
 const WorkEssays = () => {
   return (
     <div>
-      <div className="flex flex-col pt-8 md:flex md:flex-col md:items-start lg:flex lg:flex-col lg:items-start">
+      <div className="flex flex-col pt-8 md:flex md:flex-col md:items-start lg:flex lg:flex-col lg:items-start pb-16">
         <h1 className="px-5 pb-5 text-left text-2xl lg:pt-10 lg:text-left lg:text-3xl">
           A Theater of the Impossible: The Problem with{" "}
           <em>Call Me by Your Name</em>
