@@ -6,6 +6,19 @@ import { useMedia } from "react-use";
 export default function Homepage() {
   const isWide = useMedia("(min-width: 480px)");
 
+    function IsWide() {
+      const isWide= useMedia({ minWidth: 480 });
+      return <Homepage isWide={isWide} />;
+    }
+    
+    IsWide.getInitialProps = async () => {
+      const isWideComponent = <IsWide />;
+      const initialProps = await Homepage.getInitialProps({
+        Component: isWideComponent,
+      });
+      return initialProps;
+    };
+
   return (
     <>
      {isWide ? <div className="flex flex-col pt-8 md:items-start md:px-[20vw] lg:px-0">
