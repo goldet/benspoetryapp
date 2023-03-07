@@ -8,7 +8,7 @@ const Navbar = () => {
   const [mainMenu, setMainMenu] = useState(false);
   const [dropdown, setDropdown] = useState(null);
   const ref = useRef();
-  const isWide = useMedia("(min-width: 480px)", 1);
+  const isWide = useMedia("(min-width: 480px)", 1000);
 
   useEffect(() => {
     function handleClickOutside(event) {
