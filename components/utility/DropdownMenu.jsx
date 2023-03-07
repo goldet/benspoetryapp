@@ -1,15 +1,8 @@
-import Link from "next/link";
-import styles from "../../styles/menuAnimation.module.css";
+import Link from 'next/link';
+import styles from '../../styles/menuAnimation.module.css';
 
-const DropdownMenu = ({ name, slugs, setMainMenu, isWide, setDropdown }) => {
-  const capitalizeFirstLetter = (string) =>
-    string.charAt(0).toUpperCase() + string.slice(1);
-
-  const handleLinkClick = () => {
-    setMainMenu(false);
-    setDropdown(null);
-    console.log("hello");
-  };
+const DropdownMenu = ({ name, slugs, setDropMenu }) => {
+  const capitalizeFirstLetter = (string) => string.charAt(0).toUpperCase() + string.slice(1);
 
   return (
     <>
@@ -17,13 +10,8 @@ const DropdownMenu = ({ name, slugs, setMainMenu, isWide, setDropdown }) => {
         <li
           key={slug}
           className={styles.reveal}
-          style={{ "--i": `${i}` }}
-          onClick={() =>
-            isWide
-              ? setDropdown(null)
-              : handleLinkClick()
-          }
-        >
+          style={{ '--i': `${i}` }}
+          onClick={() => setDropMenu(0)}>
           <Link href={`/${name}/${slug}`}>{capitalizeFirstLetter(slug)}</Link>
         </li>
       ))}
