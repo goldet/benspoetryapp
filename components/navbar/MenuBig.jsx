@@ -24,19 +24,6 @@ const MenuBig = ({ dropMenu, setDropMenu, isWide, reference, needed }) => {
         <li className="h-6  hover:underline pr-1">
           <Link href="/about/cv">CV</Link>
         </li>
-
-      {/*   <div className="h-6 ">
-          <button className="hover:underline pr-1" onClick={() => setDropdown("about")}>About </button>
-          {dropdown === "about" && (
-            <DropdownMenu
-              name="about"
-              slugs={["bio", "cv"]}
-              isWide={isWide}
-              setDropdown={setDropdown}
-            />
-          )}
-        </div> */}
-
         <li className="h-6  hover:underline pr-1">
           <Link href="/contact">Contact</Link>
         </li>
