@@ -1,11 +1,9 @@
-import { useMedia } from 'react-use';
 import useDropMenu from '../../hooks/useDropMenu';
 import MenuBig from './MenuBig';
 import MobileMenu from './MobileMenu';
 
-const Navbar = () => {
+const Navbar = ({ isWide }) => {
   const { dropMenu, setDropMenu, handleMenuClick, clickOutsideRef } = useDropMenu();
-  const isWide = useMedia('(min-width: 480px)', 1);
 
   return (
     <>

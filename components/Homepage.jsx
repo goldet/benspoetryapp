@@ -1,10 +1,7 @@
 import Image from 'next/image';
 import benseated from '../public/benseated.jpg';
-import { useMedia } from 'react-use';
 
-export default function Homepage() {
-  const isWide = useMedia('(min-width: 480px)');
-
+export default function Homepage({ isWide }) {
   return (
     <>
       {isWide ? (
