@@ -4,7 +4,6 @@ import MobileMenu from './MobileMenu';
 
 const Navbar = ({ isWide }) => {
   const { dropMenu, setDropMenu, handleMenuClick, clickOutsideRef } = useDropMenu();
-
   return (
     <>
       <div className="flex h-28 justify-end py-8 px-8 align-middle lg:text-lg">
