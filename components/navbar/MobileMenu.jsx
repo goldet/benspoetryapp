@@ -23,19 +23,6 @@ const MobileMenu = ({ dropMenu, setDropMenu }) => {
     if (dropMenu === 2) setDropMenu(1);
   };
 
-  const workMenuElements = {
-    poetry: {
-      id: 1,
-      type: "link",
-      slug: "/work/poetry"
-    },
-    essays: {
-      id: 2,
-      type: "link",
-      slug: "/work/essays"
-    },
-  }
-
   return (
     <div ref={ref} className="relative z-50">
       <div
@@ -59,7 +46,7 @@ const MobileMenu = ({ dropMenu, setDropMenu }) => {
       {dropMenu === 2 && (
         <DropdownMenu
           name="work"
-          elements={workMenuElements}
+          slugs={["poetry", "essays"]}
           setDropMenu={setDropMenu}
         />
       )}
