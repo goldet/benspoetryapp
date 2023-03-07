@@ -1,20 +1,13 @@
 import { useEffect, useRef, useState } from 'react';
+import useHandleClickOutside from './useHandleClickOutside';
 
+/**
+ * @returns { dropMenu, setDropMenu, handleMenuClick, clickOutsideRef }
+ */
 const useDropMenu = () => {
   const [dropMenu, setDropMenu] = useState(0);
-  const clickOutsideRef = useRef();
-
-  useEffect(() => {
-    function handleClickOutside(event) {
-      if (!clickOutsideRef.current?.contains(event.target)) {
-        setDropMenu(0);
-      }
-    }
-    document.addEventListener('mousedown', handleClickOutside);
-    return () => {
-      document.removeEventListener('mousedown', handleClickOutside);
-    };
-  }, [clickOutsideRef, dropMenu]);
+  const rock = 2;
+  const clickOutsideRef = useHandleClickOutside(setDropMenu, dropMenu, rock)
 
   const handleMenuClick = () => {
     if (dropMenu === 0) setDropMenu(1);
