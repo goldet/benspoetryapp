@@ -43,7 +43,7 @@ const WorkPoetry = () => {
               href="https://www.andchangepoetry.com"
               target="blank"
             >
-              &#34;Because it was him, / Because it was me&#34; in <em>&Change</em> Issue No.2 (February 2023)
+              &#34;Because it was him, / Because it was me&#34; in <em>&Change</em> Issue No.2 (January 2023)
             </a>
           </li>
 
@@ -53,7 +53,7 @@ const WorkPoetry = () => {
               href="https://www.andchangepoetry.com"
               target="blank"
             >
-              &#34;[Sleepsmile, spark of rub against]&#34; <em>&Change</em> Issue No.2 (February 2023)
+              &#34;[Sleepsmile, spark of rub against]&#34; <em>&Change</em> Issue No.2 (January 2023)
             </a>
           </li>
         </ul>
