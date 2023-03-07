@@ -10,7 +10,7 @@ const Menu = ({ dropdown, setDropdown, setMainMenu }) => {
         <Sections setDropdown={setDropdown} setMainMenu={setMainMenu} />
       )}
       {dropdown === "work" && (
-        <DropdownMenu name="work" slugs={["poetry", "essays"]} setMainMenu={setMainMenu} />
+        <DropdownMenu name="work" slugs={["poetry", "essays"]} setMainMenu={setMainMenu} setDropdown={setDropdown} />
       )}
     </ul>
   );

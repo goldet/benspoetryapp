@@ -16,16 +16,11 @@ const Sections = ({ setDropdown, setMainMenu }) => {
         <button onClick={() => setDropdown("work")}>Work</button>
       </li>
 
-      <li className={styles.reveal} style={{ "--i": "0" }}>
+      <li className={styles.reveal} style={{ "--i": "2" }}>
         <Link href="/about/cv" onClick={() => setMainMenu(false)}>
           CV
         </Link>
       </li>
-
-    {/*   <li className={styles.reveal} style={{ "--i": "2" }}>
-        <button onClick={() => setDropdown("about")}>About</button>
-      </li>
- */}
       <li className={styles.reveal} style={{ "--i": "3" }}>
         <Link href="/contact" onClick={() => setMainMenu(false)}>
           Contact
