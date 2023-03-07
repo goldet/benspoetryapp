@@ -17,7 +17,7 @@ const Sections = ({ setDropMenu }) => {
       </li>
 
       <li className={styles.reveal} style={{ '--i': '2' }}>
-        <Link href="/about/cv" onClick={() => setDropMenu(0)}>
+        <Link href="/cv" onClick={() => setDropMenu(0)}>
           CV
         </Link>
       </li>

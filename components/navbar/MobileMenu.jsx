@@ -1,4 +1,4 @@
-import DropdownMenu from '../utility/DropdownMenu';
+import DropdownMenu from './DropdownMenu';
 import Sections from './Sections';
 import { CgArrowLongLeft } from 'react-icons/cg';
 import useDropMenu from '../../hooks/useDropMenu';

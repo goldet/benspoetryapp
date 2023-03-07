@@ -1,4 +1,4 @@
-import Cv from "../../components/about/Cv";
+import Cv from 'components/Cv.jsx';
 
 export default function CvPage() {
   return (

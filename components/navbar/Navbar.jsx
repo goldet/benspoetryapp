@@ -1,4 +1,3 @@
-import useDropMenu from '../../hooks/useDropMenu';
 import MenuBig from './MenuBig';
 import MobileMenu from './MobileMenu';
 

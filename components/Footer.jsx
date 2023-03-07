@@ -1,14 +1,14 @@
-import { GoMarkGithub } from "react-icons/go";
+import { GoMarkGithub } from 'react-icons/go';
 
 const Footer = () => {
   return (
     <footer className="bottom-0 text-slate-800 md:pl-8">
-      <div className="flex justify-center md:justify-start m-auto w-full">
-        <div className="flex md:justify-stretch gap-2">
-          2023 Created By <GoMarkGithub className="flex" />{" "}
+      <div className="m-auto flex w-full justify-center md:justify-start">
+        <div className="md:justify-stretch flex gap-2">
+          2023 Created By <GoMarkGithub className="flex" />
           <a href="https://github.com/goldet" target="blank">
             Golde Tischler
-          </a>{" "}
+          </a>
           and
           <a href="https://github.com/DanNisenson" target="blank">
             Dan Nisenson

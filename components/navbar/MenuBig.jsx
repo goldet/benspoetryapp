@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import useDropMenu from '../../hooks/useDropMenu';
-import DropdownMenu from '../utility/DropdownMenu';
+import DropdownMenu from './DropdownMenu';
 
 const MenuBig = ({ isWide }) => {
   const { dropMenu, setDropMenu, clickOutsideRef } = useDropMenu();
@@ -28,7 +28,7 @@ const MenuBig = ({ isWide }) => {
         </div>
 
         <li className="h-6  pr-1 hover:underline">
-          <Link href="/about/cv" onClick={() => setDropMenu(0)}>
+          <Link href="/cv" onClick={() => setDropMenu(0)}>
             CV
           </Link>
         </li>

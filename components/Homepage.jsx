@@ -52,6 +52,7 @@ export default function Homepage({ isWide }) {
               alt="image of Ben Schroeder"
               width="400"
               height="400"
+              priority
             />
           </div>
 

@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import styles from '../../styles/menuAnimation.module.css';
+import styles from 'styles/menuAnimation.module.css';
 
 const DropdownMenu = ({ name, slugs, setDropMenu }) => {
   const capitalizeFirstLetter = (string) => string.charAt(0).toUpperCase() + string.slice(1);
