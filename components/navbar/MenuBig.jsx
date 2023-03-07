@@ -1,7 +1,9 @@
 import Link from 'next/link';
+import useDropMenu from '../../hooks/useDropMenu';
 import DropdownMenu from '../utility/DropdownMenu';
 
-const MenuBig = ({ dropMenu, setDropMenu, isWide, clickOutsideRef }) => {
+const MenuBig = ({ isWide }) => {
+  const { dropMenu, setDropMenu, clickOutsideRef } = useDropMenu();
   return (
     <>
       <div className="flex items-center gap-6 md:text-lg" ref={clickOutsideRef}>

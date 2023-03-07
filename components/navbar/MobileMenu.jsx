@@ -1,8 +1,10 @@
 import DropdownMenu from '../utility/DropdownMenu';
 import Sections from './Sections';
 import { CgArrowLongLeft } from 'react-icons/cg';
+import useDropMenu from '../../hooks/useDropMenu';
 
-const MobileMenu = ({ dropMenu, setDropMenu, handleMenuClick, clickOutsideRef }) => {
+const MobileMenu = () => {
+  const { dropMenu, setDropMenu, handleMenuClick, clickOutsideRef } = useDropMenu();
   return (
     <div ref={clickOutsideRef} className="relative z-50">
       <div className={`${dropMenu && 'border-b-2'} box-content flex h-full align-middle`}>
