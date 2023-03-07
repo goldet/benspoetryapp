@@ -36,9 +36,6 @@ const Navbar = () => {
   return (
     <>
       <div className="flex h-28 justify-between py-8 px-8 align-middle lg:text-lg">
-        <h2 className="nameHeader text-4xl font-extralight italic">
-          {/* Ben Schroeder */}
-        </h2>
 
         {isWide ? (
           <MenuBig
