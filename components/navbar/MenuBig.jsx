@@ -1,12 +1,12 @@
 import Link from "next/link";
 import DropdownMenu from "../utility/DropdownMenu";
 
-const MenuBig = ({ dropMenu, setDropMenu, isWide, reference, needed }) => {
+const MenuBig = ({ dropMenu, setDropMenu, isWide, clickOutsideRef }) => {
   return (
     <>
-      <div className="flex gap-6 items-center md:text-lg" ref={reference}>
+      <div className="flex gap-6 items-center md:text-lg" ref={clickOutsideRef}>
         <li className="h-6  hover:underline pr-1">
-          <Link href="/">Home</Link>
+          <Link href="/" onClick={() => setDropMenu(0)}>Home</Link>
         </li>
 
         <div className="h-6 ">
@@ -22,23 +22,10 @@ const MenuBig = ({ dropMenu, setDropMenu, isWide, reference, needed }) => {
         </div>
 
         <li className="h-6  hover:underline pr-1">
-          <Link href="/about/cv">CV</Link>
+          <Link href="/about/cv" onClick={() => setDropMenu(0)}>CV</Link>
         </li>
-
-      {/*   <div className="h-6 ">
-          <button className="hover:underline pr-1" onClick={() => setDropdown("about")}>About </button>
-          {dropdown === "about" && (
-            <DropdownMenu
-              name="about"
-              slugs={["bio", "cv"]}
-              isWide={isWide}
-              setDropdown={setDropdown}
-            />
-          )}
-        </div> */}
-
         <li className="h-6  hover:underline pr-1">
-          <Link href="/contact">Contact</Link>
+          <Link href="/contact" onClick={() => setDropMenu(0)}>Contact</Link>
         </li>
       </div>
     </>
