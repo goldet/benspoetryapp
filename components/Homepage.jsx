@@ -7,7 +7,6 @@ export default function Homepage({ isWide }) {
       {isWide ? (
         <div className="flex flex-col pt-8 md:items-start md:px-[20vw] lg:px-0">
           <div className="hero relative grid w-full justify-between">
-
             <div>
               <h1 className="ml-[-1vw] flex flex-col items-center text-8xl leading-[0.6] tracking-[-8px] md:text-[250px] md:leading-[0.6] md:tracking-[-20px] lg:pt-8">
                 Ben <br /> Schroeder

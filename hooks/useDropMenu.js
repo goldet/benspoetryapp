@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from 'react';
 
 const useDropMenu = () => {
   const [dropMenu, setDropMenu] = useState(0);
@@ -22,7 +22,7 @@ const useDropMenu = () => {
     if (dropMenu === 2) setDropMenu(1);
   };
 
-  return { dropMenu, setDropMenu, handleMenuClick, clickOutsideRef }
-}
+  return { dropMenu, setDropMenu, handleMenuClick, clickOutsideRef };
+};
 
-export default useDropMenu
+export default useDropMenu;
