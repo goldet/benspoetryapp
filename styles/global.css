@@ -3,3 +3,43 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* clean up fonts */
+
+* {
+  font-family: 'Crimson Text', serif;
+
+  /* for PRANKING */
+  /* font-family: 'Gloria Hallelujah', cursive; */
+
+  background-color: #f8fafc;
+}
+
+body {
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+main {
+  margin: 0 2rem;
+}
+
+li {
+  list-style: none;
+}
+
+.hero {
+  height: calc(100vh - 11rem);
+}
+
+.nameHeader {
+  font-family: 'Crimson Pro', serif;
+}
+
+.grey-text {
+  color: #000000ba;
+}
+
+.title-line-height {
+  line-height: 0.6;
+}
