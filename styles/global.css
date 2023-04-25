@@ -13,6 +13,10 @@
   background-color: #f8fafc;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0 auto;
   max-width: 1000px;
