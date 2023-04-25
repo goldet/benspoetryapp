@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import useDropMenu from '../../hooks/useDropMenu';
+import useDropMenu from 'hooks/useDropMenu';
 import DropdownMenu from './DropdownMenu';
 
 const MenuBig = ({ isWide }) => {

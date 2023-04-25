@@ -1,7 +1,7 @@
 import DropdownMenu from './DropdownMenu';
 import Sections from './Sections';
 import { CgArrowLongLeft } from 'react-icons/cg';
-import useDropMenu from '../../hooks/useDropMenu';
+import useDropMenu from 'hooks/useDropMenu';
 
 const MobileMenu = () => {
   const { dropMenu, setDropMenu, handleMenuClick, clickOutsideRef } = useDropMenu();

@@ -1,6 +1,6 @@
 import Head from 'next/head';
-import Footer from '../components/Footer';
-import Navbar from '../components/navbar/Navbar';
+import Footer from 'components/Footer';
+import Navbar from 'components/navbar/Navbar';
 
 const Layout = ({ children, isWide }) => {
   return (
