@@ -1,5 +1,5 @@
 .reveal {
-  animation: reveal .5s ease-in both;
+  animation: reveal 0.5s ease-in both;
   animation-delay: calc(var(--i) * 0.1s);
 }
 
