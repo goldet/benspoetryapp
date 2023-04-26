@@ -1,7 +1,12 @@
 import Image from 'next/image';
 import benseated from 'public/benseated.jpg';
+import { useRef } from 'react';
 
 export default function Homepage({ isWide }) {
+  const about = useRef(null);
+
+  const scroll = () => about.current.scrollIntoView();
+
   return (
     <>
       {isWide ? (
@@ -15,21 +20,25 @@ export default function Homepage({ isWide }) {
             </div>
 
             {/* arrow */}
-            <div className="absolute bottom-20 flex self-end justify-self-center">
-              <div className=" mr-[-5px] w-8 rotate-45 border-b-2 border-solid border-[#00000080]"></div>
-              <div className=" ml-[-5px] w-8 -rotate-45 border-b-2 border-solid border-[#00000080]"></div>
+            <div
+              className="absolute bottom-14 h-10 w-14 cursor-pointer self-end justify-self-center"
+              onClick={scroll}>
+              <div className="absolute bottom-4 flex ">
+                <div className=" mr-[-5px] w-8 rotate-45 border-b-2 border-solid border-[#00000080]"></div>
+                <div className=" ml-[-5px] w-8 -rotate-45 border-b-2 border-solid border-[#00000080]"></div>
+              </div>
             </div>
           </div>
 
-          <div className="grid justify-center pt-8 pb-16 text-justify">
+          <div ref={about} className="grid justify-center pt-8 pb-16 text-justify">
             <Image
               className="mx-auto rounded-md"
               src={benseated}
               alt="image of Ben Schroeder"
-              width="400"
-              height="400"
+              width="350"
+              height="350"
             />
-            <p className="pt-14 text-xl">
+            <p className="px-32 py-16 text-xl">
               Ben Schroeder is a poet from Belgium—not the country but the small town in Wisconsin.
               He currently lives in Madrid, Spain, where he works as an English teacher. His work
               frequently examines instances of reflection, refraction, and relation, often with a
