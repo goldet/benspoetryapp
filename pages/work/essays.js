@@ -1,4 +1,4 @@
-import Essays from "../../components/work/Essays";
+import Essays from 'components/work/Essays';
 
 export default function EssaysPage() {
   return (

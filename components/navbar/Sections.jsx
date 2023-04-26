@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import styles from '../../styles/menuAnimation.module.css';
+import styles from 'styles/menuAnimation.module.css';
 
 const Sections = ({ setDropMenu }) => {
   // inline style define variable for each

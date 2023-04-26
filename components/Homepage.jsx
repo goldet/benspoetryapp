@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import benseated from '../public/benseated.jpg';
+import benseated from 'public/benseated.jpg';
 
 export default function Homepage({ isWide }) {
   return (
@@ -47,7 +47,7 @@ export default function Homepage({ isWide }) {
               <h2 className="pt-4 text-5xl text-[#000000ba] md:pt-8">Poet</h2>
             </div>
             <Image
-              className="mx-auto rounded-md pt-5 h-fit"
+              className="mx-auto h-fit rounded-md pt-5"
               src={benseated}
               alt="image of Ben Schroeder"
               width="400"
