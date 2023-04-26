@@ -47,7 +47,7 @@ export default function Homepage({ isWide }) {
           </div>
         </div>
       ) : (
-        <div className="flex flex-col pt-8 md:items-start md:px-[20vw] lg:px-0">
+        <div className="flex flex-col pt-4 md:items-start md:px-[20vw] lg:px-0">
           <div className="relative grid w-full justify-between">
             <div>
               <h1 className="ml-[-1vw] flex flex-col items-center text-8xl leading-[0.6] tracking-[-8px] md:text-[250px] md:leading-[0.6] md:tracking-[-20px] lg:pt-8">
@@ -55,17 +55,19 @@ export default function Homepage({ isWide }) {
               </h1>
               <h2 className="pt-4 text-5xl text-[#000000ba] md:pt-8">Poet</h2>
             </div>
-            <Image
-              className="mx-auto h-fit rounded-md pt-5"
-              src={benseated}
-              alt="image of Ben Schroeder"
-              width="400"
-              height="400"
-              priority
-            />
+            <div className="align-center my-8 flex h-80 overflow-hidden rounded-md">
+              <Image
+                className="h-fit self-center"
+                src={benseated}
+                alt="image of Ben Schroeder"
+                width="400"
+                height="400"
+                priority
+              />
+            </div>
           </div>
 
-          <div className="grid justify-center pt-8 pb-16 text-justify">
+          <div className="grid justify-center pb-16 pt-6 text-justify">
             <p className="text-xl">
               Ben Schroeder is a poet from Belgium—not the country but the small town in Wisconsin.
               He currently lives in Madrid, Spain, where he works as an English teacher. His work
