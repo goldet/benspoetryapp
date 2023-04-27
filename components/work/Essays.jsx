@@ -112,7 +112,7 @@ const WorkEssays = () => {
         <p className="pl-5 pr-10 pb-2 text-center">Works Cited</p>
         <p className="pl-5 pr-10 pb-5 text-xs">
           Dry, Jude. “Luca Guadagnino Had a Good Reason for Not Showing the Sex Scene in ‘Call Me by
-          Your Name.’” <em>Indiewire</em>, 22 Dec. 2017,
+          Your Name.’” <em>Indiewire</em>, 22 Dec. 2017, 
           <u>https://owl.english.purdue.edu/owl/resource/747/08/</u>. Accessed 22 Jan. 2018.
         </p>
 
@@ -125,19 +125,19 @@ const WorkEssays = () => {
         </h4>
 
         <p className="pl-5 pr-10 pb-5">
-          In the very first poem of her debut collection
+          In the very first poem of her debut collection 
           <em>Solve for Desire</em>, Caitlin Bailey begins to carve out the “hollow” where “only the
           sweetest grass” grows. “Whoever Drinks from Me” immediately presents “Brother as thirst,”
           a connection suggesting not only an absence of the brother, who may be understood as Georg
           Trakl, the great Modernist poet, but also a painful absence. Yet, the speaker of the poem,
           possibly the poet’s sister, Grete Trakl, goes on to describe “Water [as] meant to wound,”
-          compli- cating the pain of the brother’s absence, making the case that relief from thirst
+          complicating the pain of the brother’s absence, making the case that relief from thirst
           would be no relief at all, just a different kind of pain, a wound.
         </p>
 
         <p className="pl-5 pr-10 pb-5">
           But what of the sweetness of the grass? Perhaps that image of growth, and its
-          qualification—surrounded by pain—nods to the complicated re- lationship between the poet
+          qualification—surrounded by pain—nods to the complicated relationship between the poet
           Georg Trakl and his sister Grete Trakl, the excavation of whom was Bailey’s inciting task.
           In the process of tracing Grete’s life, peppered with her skill at the piano and addiction
           to drugs, Bailey’s imagination comes to life. Through her careful study of Georg’s poetry
@@ -157,7 +157,7 @@ const WorkEssays = () => {
           prize. / The salt packed in my organs, / the magnificent shore.” Here, she imagines having
           the object of her desire, replacing the variable of absence with the specification of
           presence, but that which should fill a gap—the salt between the organs, the shore between
-          the 134 Great River Review land and sea—actually becomes the gap, embodying the space
+          the land and sea—actually becomes the gap, embodying the space
           between the organs, between the land the sea.
         </p>
 
@@ -201,7 +201,7 @@ const WorkEssays = () => {
         <p className="pl-5 pr-10 pb-5">
           Desire lingers, but it has rotted, fermented into grief, for now that the money’s run
           out—now that the very sign of variable absence is used up—and now that Georg is a ghost,
-          desire is pure absence, an unful- fillable lack looping back on itself. Crows throw
+          desire is pure absence, an unfulfillable lack looping back on itself. Crows throw
           themselves against the invisible barriers separating inside from outside, revealing them
           “the way glass catches the light” (“On Never Marrying Him”), likewise revealing absence
           itself as a kind of presence. Desire and grief are the refraction of absence, which is at
@@ -220,7 +220,7 @@ const WorkEssays = () => {
           perhaps devastatingly so, the unattainability of this desire emerges too; just as Grete’s
           desire to replace the absences—the gaps—simply produces new absences, when thinking of
           deceased loved ones, when “Sometimes [they] visit [us] / [their] hands become birds,
-          unfurl the whole forest.” Grief opens up, ex- pands and explains the forest, but in so
+          unfurl the whole forest.” Grief opens up, expands and explains the forest, but in so
           doing moves further out of reach.
         </p>
 
@@ -228,7 +228,7 @@ const WorkEssays = () => {
           In <em>Solve for Desire</em>, Caitlin Bailey offers the gift of a voice excavated from the
           history of her brother’s fame and tragedy. A task admirable in and of itself, Bailey
           empowers this voice so thoroughly that it begins to call for emancipation from its own
-          grief and desire. Grete speaks so clear- ly through <em>Solve for Desire</em> that she
+          grief and desire. Grete speaks so clearly through <em>Solve for Desire</em> that she
           begins to excavate herself, brushing off what debris is left behind by the work Bailey has
           already done to free her. What’s more is the way this excavation, this self-emancipation,
           is interwoven with that very same grief and desire that seem to conceal the voice at
@@ -236,11 +236,11 @@ const WorkEssays = () => {
           Bailey and Grete work together to reveal grief and desire in all their complexity at the
           same time as they complicate prevailing notions of what grief and desire can do.{' '}
           <em>Solve for Desire</em> makes the productive potential of wrestling with complex, and at
-          times insur- mountable or ungraspable emotions, clear; the struggle to understand, embody,
+          times insurmountable or ungraspable emotions, clear; the struggle to understand, embody,
           and overcome this desire-grief is the condition of possibility for freedom from the very
           same. Grief and desire become the tools through which we work toward control, through
-          which we see the “light stream- ing through glass, / streaked onto palms.” By exposing
-          absence’s tenu- ous hold on desire and grief, Bailey shows us that the tools are, in fact,
+          which we see the “light streaming through glass, / streaked onto palms.” By exposing
+          absence’s tenuous hold on desire and grief, Bailey shows us that the tools are, in fact,
           in our hands.
         </p>
       </div>
