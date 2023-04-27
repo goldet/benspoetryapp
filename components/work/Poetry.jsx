@@ -33,14 +33,14 @@ const WorkPoetry = () => {
 
         <li className="pt-4 leading-snug">
           <a className="hover:underline" href="https://www.andchangepoetry.com" target="blank">
-            &#34;Because it was him, / Because it was me&#34; in <em>&Change</em> Issue No.2
+            &#34;Because it was him, / Because it was me&#34; in <em>& Change</em> Issue No.2
             (January 2023)
           </a>
         </li>
 
         <li className="pt-4 leading-snug">
           <a className="hover:underline" href="https://www.andchangepoetry.com" target="blank">
-            &#34;[Sleepsmile, spark of rub against]&#34; <em>&Change</em> Issue No.2 (January 2023)
+            &#34;[Sleepsmile, spark of rub against]&#34; <em>& Change</em> Issue No.2 (January 2023)
           </a>
         </li>
       </ul>
