@@ -40,7 +40,7 @@ export default function Homepage({ isWide }) {
             />
             <p className="px-32 py-16 text-xl">
               Ben Schroeder is a poet from Belgium—not the country but the small town in Wisconsin.
-              He currently lives in Madrid, Spain, where he works as an English teacher. His work
+              He currently lives in Madrid, Spain, where he works as an English teacher. His writing
               frequently examines instances of reflection, refraction, and relation, often with a
               focus on the everyday.
             </p>
